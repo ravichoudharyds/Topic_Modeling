@@ -1,4 +1,4 @@
-#Topic Modeling using LDA, VAE and GAN
+# Topic Modeling using LDA, VAE and GAN
 
 In this project, I compared topics derived from an Online LDA model implemented using gensim, Autoencoding variational inference for topic models (AVITM) introduced by Akash Srivastava and Charles Sutton and Adversarial-neural topic model (ATM) introduced by Rui Wang, Deyu Zhou, and Yulan He.
 
@@ -6,5 +6,5 @@ In this project, I compared topics derived from an Online LDA model implemented 
 
 AVITM model uses VAE for inference, therefore it uses an approximation of Laplace distribution with logistic-normal distribution. While ATM paper uses GAN for inference. I evaluated the model against each other using the topic coherence scores from gensim package. My results from running just one iteration showed that AVITM and ATM can outperform traditional LDA by giving more meaningful and independent topics. I would suggest to repeat the experiments a few more times to get a range of scores and to draw conclusions on the perormance of the models.
 
-##Caveat:
+## Caveat:
 The topic coherence unfortunately couldn't be calculated using wiki corpus and was instead calculated from the documents themselves. Also early stopping was used for selecting the best ATM/AVITM models using the Topic Coherence score.  
